@@ -499,6 +499,94 @@ a {
 	display: block;
 }
 
-@media (max-width: 1200px) {
+.menu__btn {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.header__phone span {
+		display: none;
+	}
+}
+
+@media (max-width: 560px) {
+	.header__title {
+		font-size: 50px;
+	}
+	
+	.menu__btn {
+		display: inline-block;
+		width: 40px;
+		height: 30px;
+		border: none;
+		padding: 0;
+		background-color: transparent;
+		position: absolute;
+		right: 10px;
+		top: 107px;
+		cursor: pointer;
+	}
+	
+	.menu__btn::after,
+	.menu__btn::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		left: 0;
+		height: 2px;
+		background-color: #fff;
+	}
+	
+	.menu__btn::before {
+		top: 0;
+	}
+	
+	.menu__btn::after {
+		bottom: 0;
+	}
+	
+	.menu__btn span {
+		display: block;
+		height: 2px;
+		background-color: #fff;
+	}
+	
+	.menu__list {
+		transform: translateY(-200%);
+		display: block;
+		background-color: #886239;
+		padding: 10px 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	
+	.menu__list.menu__list--active {
+		transform: translateY(0);
+	}
+	
+	.menu__link {
+		padding: 10px;
+		display: block;
+		text-align: center;
+	}
+	
+	.logo {
+		width: 100%;
+/*		text-align: center;*/
+		margin-bottom: 30px;
+	}
+	
+	.header__top {
+/*		justify-content: center;*/
+	}
+	
+	.header__phone-number {
+		margin-left: 0;
+	}
+	
+	.menu {
+		border: none;
+	}
 	
 }
