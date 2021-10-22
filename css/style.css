@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+*::selection {
+	background-color: #886239;
+  color: #fff;
+}
+
 body {
 	font-weight: 400;
 	font-size: 18px;
@@ -23,6 +28,23 @@ a {
 	padding: 0 10px;
 }
 
+.unit__hover {
+	transition: 0.3s linear;
+}
+
+.unit__hover:hover {
+	background-color: #fff;
+	color: #886239;
+}
+
+.text__hover {
+	transition: 0.2s linear;
+}
+
+.text__hover:hover {
+	color: #6a441c;
+}
+
 .header {
 	background-image: url(../images/header/bg.jpg);
 	background-size: cover;
@@ -35,6 +57,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	padding-bottom: 10px;
 }
 
 .header__top {
@@ -66,7 +89,6 @@ a {
 	border-bottom: 1px solid #fff;
 	margin-top: 15px;
 	padding: 27px 0 24px;
-
 }
 
 .menu__list {
@@ -108,6 +130,19 @@ a {
 .header__arrow {
 	text-align: center;
 }
+
+
+.header__arrow-img {
+	border-radius: 50%;
+	transition: .2s linear;
+}
+
+.header__arrow-img:hover {
+	background-color: #ac7b47;
+	border-radius: 50%;
+/*	border: 1px solid #886239;*/
+}
+
 
 .direction {
 	padding: 100px 0;
@@ -304,6 +339,16 @@ a {
 	position: absolute;
 	top: -85px;
 	right: 0;
+}
+
+.slick-btn img {
+	border-radius: 50%;
+	transition: .3s linear;
+}
+
+.slick-btn img:hover {
+	background-color: #ac7b47;
+	border-radius: 50%;
 }
 
 .slick-prev {
@@ -778,7 +823,6 @@ a {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-
 	.tour__info {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -788,5 +832,4 @@ a {
 	.about__popup {
 		min-height: 280px;
 	}
-
 }
